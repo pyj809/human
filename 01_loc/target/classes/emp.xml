@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="com.zero_jun.emp.Emp" id="emp">
+		<lookup-method bean="programer" name="getEmp"/>
+	</bean>
+	<bean class="com.zero_jun.emp.Programer" id="programer"></bean>
+	<bean class="com.zero_jun.emp.Designer" id="designer"></bean>
+</beans>
